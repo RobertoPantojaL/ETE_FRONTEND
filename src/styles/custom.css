@@ -1,0 +1,206 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --light-color: #f8f9fa;
+    --dark-color: #343a40;
+  
+    /* Light mode variables */
+    --bg-color: #f8f9fa;
+    --text-color: #212529;
+    --card-bg: #ffffff;
+    --border-color: #dee2e6;
+    --navbar-bg: #007bff;
+    --navbar-color: #ffffff;
+  }
+  
+  /* Dark mode variables */
+  .dark-mode {
+    --bg-color: #1a1a1a;
+    --text-color: #ffffff;
+    --card-bg: #2d2d2d;
+    --border-color: #404040;
+    --navbar-bg: #2d2d2d;
+    --navbar-color: #ffffff;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .navbar {
+    background-color: var(--navbar-bg);
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar-brand {
+    color: var(--navbar-color) !important;
+    font-weight: bold;
+  }
+  
+  .card {
+    background-color: var(--card-bg);
+    border-radius: 1rem;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-body {
+    padding: 2rem !important;
+  }
+  
+  .btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+  }
+  
+  .btn-success {
+    background-color: var(--success-color);
+    border-color: var(--success-color);
+  }
+  
+  .btn-danger {
+    background-color: var(--danger-color);
+    border-color: var(--danger-color);
+  }
+  
+  .btn-icon {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid var(--navbar-color);
+    color: var(--navbar-color);
+    transition: all 0.3s ease;
+  }
+  
+  .btn-icon:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--navbar-color);
+  }
+  
+  .form-control {
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ced4da;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+  }
+  .dark-mode .form-control::placeholder {
+    color: var(--text-color);
+  }
+
+
+
+  .dark-mode .form-control {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+    color: var(--text-color);
+  }
+  
+  .dark-mode .form-control:focus {
+    background-color: var(--card-bg);
+    border-color: var(--primary-color);
+    color: var(--text-color);
+  }
+  
+  .dark-mode .form-select {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+    color: var(--text-color);
+  }
+  
+  .form-control-lg {
+    font-size: 1rem;
+  }
+  
+  .btn {
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .btn-lg {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #5c636a;
+    border-color: #565e64;
+  }
+  
+  .pagination .page-item.active .page-link {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+  
+  .task-status {
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  
+  .task-status.pending {
+    color: var(--secondary-color);
+  }
+  
+  .task-status.in-progress {
+    color: var(--primary-color);
+  }
+  
+  .task-status.completed {
+    color: var(--success-color);
+  }
+  
+  @media (max-width: 768px) {
+    .card-body {
+      padding: 1.5rem !important;
+    }
+  
+    .form-control-lg {
+      font-size: 0.95rem;
+    }
+  
+    .btn-lg {
+      font-size: 0.95rem;
+      padding: 0.5rem 1rem;
+    }
+    .btn-icon {
+      width: 36px;
+      height: 36px;
+    }
+  
+    .navbar .btn {
+      padding: 0.4rem 0.8rem;
+    }
+  }
+  
+  
